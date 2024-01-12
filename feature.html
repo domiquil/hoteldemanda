@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features</title>
+  <link rel="stylesheet" href="feature.css">
+</head>
+<body>
+<header> <h1> Hotel Features <h1> </header>
+
+  <div class="character" id="character1" onclick="showPopup('OUR ROOMS', 'We only have 2 types of room, One is the Ocean View Room which faces the fantastic view of the ocean nearby and the other one is the Garden View Room which faces our garden and fountain.', 1)">
+    <img src="character1.jpg">
+    <p>ROOMS</p>
+  </div>
+
+  <div class="character" id="character2" onclick="showPopup('OUR POOLS', 'Dive into our massive 50-meter Olympic size pool and relax in our stunning infinity-edge pool that blends into the beach view.', 2)">
+    <img src="character2.jpg">
+    <p>POOLS</p>
+  </div>
+
+  <div class="character" id="character3" onclick="showPopup('ATRIUM GARDEN', 'Step into an oasis of tranquility in our indoor garden atrium, featuring a koi pond surrounded by lush tropical foliage. Guests are welcomed to unwind amidst the butterflies and birds that inhabit this natural sanctuary in the heart of our hotel.', 3)">
+    <img src="character3.jpg">
+    <p>GARDEN</p>
+  </div>
+
+  <div class="character" id="character4" onclick="showPopup('OUR GYM', 'Stay fit during your stay in our 24-hour fitness lounge, fully equipped with state-of-the-art exercise machines, free weights, and cardio equipment. After your workout, recover in our relaxation area with healthy refreshments and complimentary amenities like fresh towels and WiFi access.', 4)">
+    <img src="character4.jpg">
+    <p>FITNESS LOUNGE</p>
+  </div>
+
+
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <div class="popup-content">
+        <h2 id="popup-title"></h2>
+        <p id="popup-description"></p>
+        <div class="character-pictures" id="character-pictures">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <button class="go-to-home" onclick="goToHome()">
+    Go To Home
+    <span class="arrow">&#10140;</span>
+  </button>
+</footer>
+
+
+  <script src="feature.js"></script>
+</body>
+</html>
